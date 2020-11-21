@@ -5,8 +5,6 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import './Hero.css';
-import Modal from '../elements/Modal';
-import LoginForm from './LoginForm';
 
 const propTypes = {
   ...SectionProps.types
@@ -16,7 +14,7 @@ const defaultProps = {
   ...SectionProps.defaults
 }
 
-const LoginTop = ({
+const ChatTop = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -26,17 +24,6 @@ const LoginTop = ({
   invertColor,
   ...props
 }) => {
-
-  const [user, setUser] = useState({name: "", email: ""});
-  const [error, setError] = useState("");
-
-  const Login = (data) => {
-    console.log(data)
-  }
-
-  const Logout = () => {
-    console.log("Log Out");
-  }
 
   const outerClasses = classNames(
     'hero section center-content',
@@ -62,24 +49,18 @@ const LoginTop = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Log <span className="text-color-secondary">In</span>
+              Chat
             </h1>
           </div>
-        {(user.email != "") ? (
-          <div className="text-center">
-            <h2>Welcome, {user.name}</h2>
-            <button>Log Out</button>
-          </div>  
-        ) : (
-          <LoginForm Login={Login} error={error} />
-        )}
+        <div className="mb-16">Nothing here yet!</div>
+        <div>Login to get started</div>
         </div>
       </div>
     </section>
   );
 }
 
-LoginTop.propTypes = propTypes;
-LoginTop.defaultProps = defaultProps;
+ChatTop.propTypes = propTypes;
+ChatTop.defaultProps = defaultProps;
 
-export default LoginTop;
+export default ChatTop;

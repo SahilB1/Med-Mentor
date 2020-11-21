@@ -117,6 +117,9 @@ const Header = ({
                     <li>
                       <Link to="/login" onClick={closeMenu}>Login</Link>
                     </li>
+                    <li>
+                      <Link to="/chat" onClick={closeMenu}>Chat</Link>
+                    </li>
                   </ul>
                   {!hideSignin &&
                     <ul

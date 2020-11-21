@@ -12,6 +12,7 @@ import Home from './views/Home';
 import About from './views/About';
 import Login from './views/Login';
 import SignUp from './views/SignUp';
+import Chat from './views/Chat';
 
 
 // Initialize Google Analytics
@@ -44,6 +45,7 @@ const App = () => {
           <AppRoute exact path="/about" component={About} layout={LayoutDefault} />
           <AppRoute exact path="/login" component={Login} layout={LayoutDefault} />
           <AppRoute exact path="/signup" component={SignUp} layout={LayoutDefault} />
+          <AppRoute exact path="/chat" component={Chat} layout={LayoutDefault} />
         </Switch>
       )} />
   );
