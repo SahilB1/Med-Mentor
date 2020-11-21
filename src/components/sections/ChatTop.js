@@ -52,7 +52,7 @@ const ChatTop = ({
               Chat
             </h1>
           </div>
-        <div className="mb-16">Nothing here yet!</div>
+        <div className="mb-20">Nothing here yet!</div>
         <div>Login to get started</div>
         </div>
       </div>
