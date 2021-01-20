@@ -14,9 +14,6 @@ function LoginForm({ Login, error }) {
             <form onSubmit={submitHandler}>
                 <div className="form-inner">
                 <div className="form-group">
-                    <input type="text" placeholder="Name" name="name" id="name" onChange={e => setDetails({...details, name: e.target.value})} value={details.name} />
-                </div>
-                <div className="form-group">
                     <input type="text" placeholder="MSU Email" name="email" id="email" onChange={e => setDetails({...details, email: e.target.value})} value={details.email} />
                 </div>
                 <div className="form-group">

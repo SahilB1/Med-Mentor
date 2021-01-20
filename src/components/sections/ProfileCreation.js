@@ -8,15 +8,6 @@ import './Hero.css';
 import Modal from '../elements/Modal';
 import { Card, Button } from 'react-bootstrap';
 
-/*
-attributes:
-
-role
-name
-email
-password
-*/
-
 
 const propTypes = {
   ...SectionProps.types
@@ -26,7 +17,7 @@ const defaultProps = {
   ...SectionProps.defaults
 }
 
-const Hero = ({
+const ProfileCreation = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -124,7 +115,7 @@ const Hero = ({
   );
 }
 
-Hero.propTypes = propTypes;
-Hero.defaultProps = defaultProps;
+ProfileCreation.propTypes = propTypes;
+ProfileCreation.defaultProps = defaultProps;
 
-export default Hero;
+export default ProfileCreation;
